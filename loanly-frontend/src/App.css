@@ -1,0 +1,12 @@
+/* index.css */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #0a0a0a; /* black background */
+  color: #fff; /* white text */
+}
+
+a {
+  color: #ff3b3b; /* red accent for links */
+  text-decoration: none;
+}

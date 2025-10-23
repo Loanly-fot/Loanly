@@ -1,17 +1,19 @@
 // App.js
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
+import Navbar from './components/Navbar'; // import Navbar
+import './App.css';
 
 function App() {
   return (
     <Router>
-      <div style={{ padding: '20px' }}>
-        <nav style={{ marginBottom: '20px' }}>
-          <Link to="/" style={{ marginRight: '10px' }}>Home</Link>
-          <Link to="/about">About</Link>
-        </nav>
+      {/* Navbar is now at the top for all pages */}
+      <Navbar />
+      
+      {/* Main content */}
+      <div className="app-container">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
